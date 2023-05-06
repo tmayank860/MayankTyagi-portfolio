@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.baa47114.css",
-    "main.js": "/react-gh-pages/static/js/main.aa78b5f5.js",
-    "static/js/787.1ed0c42c.chunk.js": "/react-gh-pages/static/js/787.1ed0c42c.chunk.js",
-    "static/media/hero.jpg": "/react-gh-pages/static/media/hero.4304c077b17aa6b8f02c.jpg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.baa47114.css.map": "/react-gh-pages/static/css/main.baa47114.css.map",
-    "main.aa78b5f5.js.map": "/react-gh-pages/static/js/main.aa78b5f5.js.map",
-    "787.1ed0c42c.chunk.js.map": "/react-gh-pages/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/MayankTyagi-portfolio/static/css/main.baa47114.css",
+    "main.js": "/MayankTyagi-portfolio/static/js/main.f3c358e8.js",
+    "static/js/787.1ed0c42c.chunk.js": "/MayankTyagi-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/hero.jpg": "/MayankTyagi-portfolio/static/media/hero.4304c077b17aa6b8f02c.jpg",
+    "index.html": "/MayankTyagi-portfolio/index.html",
+    "main.baa47114.css.map": "/MayankTyagi-portfolio/static/css/main.baa47114.css.map",
+    "main.f3c358e8.js.map": "/MayankTyagi-portfolio/static/js/main.f3c358e8.js.map",
+    "787.1ed0c42c.chunk.js.map": "/MayankTyagi-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baa47114.css",
-    "static/js/main.aa78b5f5.js"
+    "static/js/main.f3c358e8.js"
   ]
 }

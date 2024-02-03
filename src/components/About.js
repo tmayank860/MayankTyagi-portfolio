@@ -1,6 +1,21 @@
-import React from "react";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
 
 const About = () => {
+
+  const [experienceInYear, setexperienceInYear] = useState(2);
+  useEffect(() => {
+    const startDate = moment('2020-11-01');
+  
+    // Current date
+    const currentDate = moment();
+  
+    // Calculate the difference in years
+    const yearsDifference = currentDate.diff(startDate, 'years');
+    setexperienceInYear(yearsDifference);
+
+  }, [])
+  
   return (
     <div
       name="about"
@@ -21,19 +36,20 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          With 3 years of experience in building and designing software, I
+         {` With ${experienceInYear}+ years of experience in building and designing software, I
           specialize in front-end development and work with cutting-edge
           technologies like React JS, React Native, GraphQL, JSON, RestAPIs, and
-          Tailwind.
+          Tailwind.`}
         </p>
         <br/>
         <p className="text-xl">
-          As an experienced Full Stack Developer, I have 2.5 years of experience
+          {`As an experienced Full Stack Developer, I have ${experienceInYear}+ years of experience
           in designing and implementing multiple UIs using React, Native-Base,
           and Styled Components. I have also developed micro frontends from
-          scratch and trained and mentored new team members.
+          scratch and trained and mentored new team members.`}
         </p>
         <br />
+        
         {/* <p className="text-xl">
           During my tenure as a Digital Specialist Engineer at Infosys, I have
           worked on both frontend and backend technologies, executed unit tests,

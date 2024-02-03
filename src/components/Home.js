@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroImage from "../assets/hero.jpg";
 import { RiArrowRightDownLine } from "react-icons/ri";
 import { Link } from "react-scroll";
+import moment from "moment";
 const Home = () => {
+  const [experienceInYear, setexperienceInYear] = useState(2);
+  useEffect(() => {
+    const startDate = moment('2020-11-01');
+  
+    // Current date
+    const currentDate = moment();
+  
+    // Calculate the difference in years
+    const yearsDifference = currentDate.diff(startDate, 'years');
+    setexperienceInYear(yearsDifference);
+
+  }, [])
   return (
     <div
       name="home"
@@ -18,11 +31,11 @@ const Home = () => {
             content creator by 💗 
           </h2>
           <p className="text-gray-400 py-4 max-w-md md:max-w-lg">
-            I'm a Full Stack Developer with 3 years of experience in the IT industry. 
-            With 2 years of experience in front-end development, I have honed my skills 
-            in React JS, React Native, and GraphQL. My ability to design and develop 
-            responsive user interfaces has helped me build scalable and robust software 
-            applications.
+           {` I'm a Full Stack Developer with ${experienceInYear}+ years of experience in the IT industry. 
+            Currently contributing more in front-end development. I have honed my skills 
+            in React JS, React Native, Node.js, Express.js, mongoDB and GraphQL. My ability to design and develop 
+            responsive user interfaces has helped me build scalable and robust 
+            applications.`}
           </p>
           <div>
             <Link
